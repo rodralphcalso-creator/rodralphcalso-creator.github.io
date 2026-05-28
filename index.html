@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rod Ralph Calso | Administrative VA Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  color:#1a1a1a;
+  background:#f5f9ff;
+  overflow-x:hidden;
+}
+
+/* ===== OFFICE BACKGROUND ===== */
+.bg{
+  position:fixed;
+  inset:0;
+  background:
+    url("https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=2000&q=80");
+  background-size:cover;
+  background-position:center;
+  z-index:-3;
+}
+
+.bg::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.18),
+    rgba(255,255,255,0.35)
+  );
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.profile{
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  overflow:hidden;
+  border:5px solid white;
+  box-shadow:0 10px 30px rgba(0,0,0,0.15);
+  animation: float 5s ease-in-out infinite;
+}
+
+.profile img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+@keyframes float{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-18px);}
+}
+
+.hero h1{
+  font-size:40px;
+  margin-top:20px;
+  letter-spacing:2px;
+  color:#0b3d91;
+  font-weight:700;
+}
+
+/* ROLE BADGE */
+.role{
+  margin-top:12px;
+  font-size:20px;
+  font-weight:700;
+  letter-spacing:3px;
+  color:#0b3d91;
+  background:rgba(255,255,255,0.75);
+  display:inline-block;
+  padding:10px 20px;
+  border-radius:30px;
+  border:1px solid rgba(11,61,145,0.2);
+  box-shadow:0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* CONTAINER */
+.container{
+  width:90%;
+  max-width:1000px;
+  margin:auto;
+  padding-bottom:80px;
+}
+
+/* CARDS */
+.card{
+  background:rgba(255,255,255,0.65);
+  border:1px solid rgba(255,255,255,0.7);
+  backdrop-filter:blur(10px);
+  border-radius:18px;
+  padding:25px;
+  margin:20px 0;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  background:rgba(255,255,255,0.8);
+}
+
+.title{
+  color:#0b3d91;
+  font-weight:700;
+  margin-bottom:12px;
+  letter-spacing:1px;
+}
+
+/* TEXT */
+.text{
+  font-size:14px;
+  line-height:1.8;
+  color:#333;
+}
+
+/* SKILLS */
+.badge{
+  display:inline-block;
+  padding:6px 12px;
+  margin:5px;
+  border-radius:20px;
+  background:#e8f3ff;
+  border:1px solid #bcdfff;
+  font-size:13px;
+  color:#0b3d91;
+}
+
+/* CONTACT */
+.contact{
+  line-height:1.8;
+  font-size:14px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero h1{font-size:28px;}
+  .role{font-size:16px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<!-- HERO -->
+<div class="hero">
+
+  <div class="profile">
+    <img src="myphoto.jpg" alt="Profile Photo">
+  </div>
+
+  <h1>ROD RALPH CALSO</h1>
+
+  <div class="role">
+    ADMINISTRATIVE VIRTUAL ASSISTANT
+  </div>
+
+</div>
+
+<div class="container">
+
+  <!-- PROFILE -->
+  <div class="card">
+    <div class="title">PROFILE</div>
+    <div class="text">
+      Detail-oriented and highly reliable Administrative Virtual Assistant with 7 years of professional experience supporting government office operations through efficient documentation, data management, and administrative coordination.<br><br>
+
+      Experienced in handling confidential records, maintaining accurate databases, and ensuring smooth workflow in structured office environments. Known for strong organizational ability, problem-solving mindset, and delivering accurate output even under tight deadlines.<br><br>
+
+      Committed to improving operational efficiency through systematic filing, digital record management, and proactive task handling while maintaining professionalism and attention to detail.
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="card">
+    <div class="title">CONTACT & REFERENCE</div>
+    <div class="contact">
+      📞 +639457922226<br>
+      📧 rodralphcalso@gmail.com<br>
+      📍 Puerto Princesa City, Palawan, Philippines<br><br>
+
+      📞 +639984842195<br>
+      📧 abrahammotosjr@yahoo.com<br>
+      👤 Abraham Motos Jr
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="card">
+    <div class="title">SKILLS</div>
+    <span class="badge">Data Entry</span>
+    <span class="badge">Email Management</span>
+    <span class="badge">Calendar Management</span>
+    <span class="badge">Excellent Time Management</span>
+    <span class="badge">Attention to Detail</span>
+    <span class="badge">Adaptability & Flexibility</span>
+    <span class="badge">Communication Skills</span>
+    <span class="badge">Organizational Skills</span>
+  </div>
+
+  <!-- WORK EXPERIENCE -->
+  <div class="card">
+    <div class="title">WORK EXPERIENCE</div>
+
+    <div class="text">
+      <b>Administrative Assistant II</b><br>
+      Provincial Government of Palawan | 2019 – PRESENT<br><br>
+
+      • Manage daily administrative operations including document processing and filing<br>
+      • Maintain and update official databases and Excel tracking systems<br>
+      • Handle internal and external client inquiries professionally<br>
+      • Process and organize employee records and deductions<br>
+      • Verify data accuracy and reconcile discrepancies in reports<br>
+      • Assist in auditing and compliance documentation<br>
+      • Support supervisors with reports and assigned tasks<br>
+      • Ensure confidentiality of sensitive records<br>
+      • Identify and correct documentation errors<br>
+      • Improve workflow efficiency through organized systems<br>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="card">
+    <div class="title">EDUCATION</div>
+    <div class="text">
+      Bachelor of Science in Business Administration (2014 – 2018)<br>
+      Palawan State University
+    </div>
+  </div>
+
+  <!-- LANGUAGES -->
+  <div class="card">
+    <div class="title">LANGUAGES</div>
+    <span class="badge">English</span>
+    <span class="badge">Tagalog</span>
+  </div>
+
+</div>
+
+</body>
+</html>
